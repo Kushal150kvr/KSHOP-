@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KESHOPE</title>
+    <link rel="shortcut icon" href="image/logo1.jpeg" type="image/x-icon">
+    <!--STYLE-->
+    <link rel="stylesheet" href="style.css">
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body>
+    <!--SECTION 1 _HEADER & NAVBAR-->
+    <section id="header">
+
+        <a href="INDEX.html"> <img src="image/logo1.jpeg" alt=""> </a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="INDEX.html">home</a></li>
+                <li><a href="shop.html">shope</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a class="active" href="account.html">account</a></li>
+                <li id="bag"><a href="cart.html"><i class="fas fa-cart-arrow-down"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-cart-arrow-down"></i></a>
+            <i id="bar" class="fas fa-caret-square-down"></i>
+        </div>
+    </section>
+
+
+
+    <!--billing from--->
+
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form name="form-googlesheet" method="post">
+
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Billing Address</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="Name" placeholder="Raj" required>
+                            <label for="Address"><b>Address</b></label>
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="Email" placeholder="raj200@email.com" required>
+                            <label for="Address"><b>Address</b></label>
+                            <label for="contact number"><b>Contact Number</b></label>
+                            <input type="number" placeholder="9874563210" name="Contact number" required required>
+                            <label for="Address"><b>Address</b></label>
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+
+                            <input type="text" id="adr" name="Address" placeholder="Address" required>
+                            <label for="Address"><b>Address</b></label>
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="City" placeholder="BENGALURU" required>
+                            <label for="Address"><b>Address</b></label>
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="State" placeholder="KARNATAKA" required>
+                                    <label for="Address"><b>Address</b></label>
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="Zip" placeholder="123456" required>
+                                    <label for="Address"><b>Address</b></label>
+                                </div>
+                                <div class="col-50">
+                                    <h3>Payment</h3>
+                                    <Select name="Payment"> 
+                                        <option >SELECT Payment</option>
+                                        <option > cash on DEVLIVERY</option>
+                                        <option >card </option>
+                                        <option >UPI</option>
+                                        <option >EMI</option>
+                                    </Select>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div>
+                        <div id="subtotal">
+                            <h3>PRICE DETAILS</h3>
+                            <table>
+                                <tr>
+                                    <td> Subtotal</td>
+
+                                    <td>&#8377; 1335</td>
+                                </tr>
+                                <tr>
+                                    <td>Shipping</td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total</strong></td>
+                                    <td><strong>&#8377; 1335</strong></td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <button type="submit" class="btn">Continue to checkout</button>
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <footer class="row-2">
+            <div class="col">
+                <img src="image/logo1.jpeg" width="200px" alt="">
+                <h4>contact</h4>
+                <p> ADDRESS :- #101/55 LIVE TECH RAOD,H.B.R LAYOUT,BENGALURU 560003 <br> CONTACT NUMBER:-1234567890 & 9987456321 </p>
+            </div>
+            <div class="follow">
+                <h4> FOLLOW US </h4>
+                <div class="icon">
+                    <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                    <a href="#"> <i class="fab fa-twitter"></i></a>
+                    <a href="#"> <i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <h4>ABOUT US</h4>
+                <a href="#"> ABOUT US  </a>
+                <a href="#"> CONTACT US  </a>
+                <a href="#"> PRIVACY POLICY  </a>
+                <a href="#"> DEVLIVERY INFORMATION </a>
+            </div>
+            <div class="col">
+                <h4>MY ACCOUNT </h4>
+                <a href="signup.html">SIGN up </a>
+                <a href="#">ORDER</a>
+                <a href="#">ADDRESS</a>
+                <a href="#">TRACK ORDER</a>
+            </div>
+
+        </footer>
+
+
+
+
+        <script>
+            const scriptURL =
+                'https://script.google.com/macros/s/AKfycbyr8SCjuD35Ew4w2eaWdLcDv9xKGlPVwgqVsiWPGfZDRYxeOz6DX8i4naYMYoXaJq8jWQ/exec'
+            const form = document.forms['form-googlesheet']
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, {
+                        method: 'POST',
+                        body: new FormData(form)
+                    })
+                    .then(response => alert(
+                        "@@!!Thanks Happy Shopping!!@@"))
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+
+</body>
+
+
+</html>
